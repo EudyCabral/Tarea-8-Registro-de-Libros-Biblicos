@@ -1,4 +1,5 @@
-﻿using RegistrodeLibrosBiblicos.UI.Registros;
+﻿using RegistrodeLibrosBiblicos.UI.Consultas;
+using RegistrodeLibrosBiblicos.UI.Registros;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,6 +22,17 @@ namespace RegistrodeLibrosBiblicos
         {
             RegistrodeLibrosBiblico registrodeLibrosBiblico = new RegistrodeLibrosBiblico();
             registrodeLibrosBiblico.Show();
+        }
+
+        private void consultasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void librosBiblicosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultadeLibrosBiblicos consulta = new ConsultadeLibrosBiblicos();
+            consulta.Show();
         }
     }
 }

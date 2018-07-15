@@ -77,12 +77,14 @@
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.consultasToolStripMenuItem.Text = "Consultas";
+            this.consultasToolStripMenuItem.Click += new System.EventHandler(this.consultasToolStripMenuItem_Click);
             // 
             // librosBiblicosToolStripMenuItem
             // 
             this.librosBiblicosToolStripMenuItem.Name = "librosBiblicosToolStripMenuItem";
-            this.librosBiblicosToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.librosBiblicosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.librosBiblicosToolStripMenuItem.Text = "Libros Biblicos";
+            this.librosBiblicosToolStripMenuItem.Click += new System.EventHandler(this.librosBiblicosToolStripMenuItem_Click);
             // 
             // MainForm
             // 

@@ -42,7 +42,17 @@ namespace RegistrodeLibrosBiblicos.UI.Consultas
                     {
                         int id = Convert.ToInt32(CriteriotextBox.Text);
 
-                        filtro = x => x.LibroId == id;
+                    
+
+                        if (FechacheckBox.Checked == true)
+                        {
+                            filtro = x => x.LibroId == id && (DesdedateTimePicker.Value >= x.Fecha && HastadateTimePicker.Value <= x.Fecha);
+                        }
+                        else
+                        {
+                            filtro = x => x.LibroId == id;
+                        }
+
 
                         if (BLL.LibrosBiblicosBLL.GetList(filtro).Count() == 0)
                         {
@@ -68,7 +78,16 @@ namespace RegistrodeLibrosBiblicos.UI.Consultas
                     }
                     else
                     {
-                        filtro = x => x.Descripcion.Contains(CriteriotextBox.Text);
+                        
+
+                        if (FechacheckBox.Checked == true)
+                        {
+                            filtro = x => x.Descripcion.Contains(CriteriotextBox.Text) && (DesdedateTimePicker.Value >= x.Fecha && HastadateTimePicker.Value <= x.Fecha);
+                        }
+                        else
+                        {
+                            filtro = x => x.Descripcion.Contains(CriteriotextBox.Text);
+                        }
 
                         if (BLL.LibrosBiblicosBLL.GetList(filtro).Count() == 0)
                         {
@@ -93,7 +112,16 @@ namespace RegistrodeLibrosBiblicos.UI.Consultas
                     else
                     {
                         
-                        filtro = x => x.Siglas.Equals(CriteriotextBox.Text);
+                    
+
+                        if (FechacheckBox.Checked == true)
+                        {
+                            filtro = x => x.Siglas.Equals(CriteriotextBox.Text) && (DesdedateTimePicker.Value >= x.Fecha && HastadateTimePicker.Value <= x.Fecha);
+                        }
+                        else
+                        {
+                            filtro = x => x.Siglas.Equals(CriteriotextBox.Text);
+                        }
 
 
                         if (BLL.LibrosBiblicosBLL.GetList(filtro).Count() == 0)
@@ -119,7 +147,16 @@ namespace RegistrodeLibrosBiblicos.UI.Consultas
                     else
                     {
                      
-                        filtro = x => x.Tipo.Equals(CriteriotextBox.Text);
+                      
+                        if (FechacheckBox.Checked == true)
+                        {
+                            filtro = x => x.Tipo.Equals(CriteriotextBox.Text) && (DesdedateTimePicker.Value >= x.Fecha && HastadateTimePicker.Value <= x.Fecha);
+                        }
+                        else
+                        {
+                            filtro = x => x.Tipo.Equals(CriteriotextBox.Text);
+                        }
+
 
 
                         if (BLL.LibrosBiblicosBLL.GetList(filtro).Count() == 0)
