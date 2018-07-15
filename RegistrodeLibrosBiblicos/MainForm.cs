@@ -9,11 +9,16 @@ using System.Windows.Forms;
 
 namespace RegistrodeLibrosBiblicos
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void registroDeLibrosBiblicosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        //    RegistrodeLibrosBiblicos 
         }
     }
 }

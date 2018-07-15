@@ -1,6 +1,6 @@
-﻿namespace RegistrodeLibrosBiblicos
+﻿namespace RegistrodeLibrosBiblicos.UI.Consultas
 {
-    partial class Form1
+    partial class ConsultadeLibrosBiblicos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // ConsultadeLibrosBiblicos
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(607, 450);
+            this.Name = "ConsultadeLibrosBiblicos";
+            this.Text = "Consulta de Libros Biblicos";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-
