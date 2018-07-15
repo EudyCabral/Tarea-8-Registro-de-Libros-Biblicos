@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RegistrodeLibrosBiblicos.UI.Registros;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,7 +19,8 @@ namespace RegistrodeLibrosBiblicos
 
         private void registroDeLibrosBiblicosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-        //    RegistrodeLibrosBiblicos 
+            RegistrodeLibrosBiblico registrodeLibrosBiblico = new RegistrodeLibrosBiblico();
+            registrodeLibrosBiblico.Show();
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RegistrodeLibrosBiblicos.UI.Registros
 {
-    public partial class RegistrodeLibrosBiblicos : Form
+    public partial class RegistrodeLibrosBiblico : Form
     {
-        public RegistrodeLibrosBiblicos()
+        public RegistrodeLibrosBiblico()
         {
             InitializeComponent();
         }

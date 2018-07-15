@@ -1,6 +1,6 @@
 ﻿namespace RegistrodeLibrosBiblicos.UI.Registros
 {
-    partial class RegistrodeLibrosBiblicos
+    partial class RegistrodeLibrosBiblico
     {
         /// <summary>
         /// Required designer variable.
@@ -178,7 +178,7 @@
             this.Eliminarbutton.UseVisualStyleBackColor = true;
             this.Eliminarbutton.Click += new System.EventHandler(this.Eliminarbutton_Click);
             // 
-            // RegistrodeLibrosBiblicos
+            // RegistrodeLibrosBiblico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -197,7 +197,7 @@
             this.Controls.Add(this.descripcionTextBox);
             this.Controls.Add(libroIdLabel);
             this.Controls.Add(this.libroIdNumericUpDown);
-            this.Name = "RegistrodeLibrosBiblicos";
+            this.Name = "RegistrodeLibrosBiblico";
             this.Text = "Registro de Libros Biblicos";
             ((System.ComponentModel.ISupportInitialize)(this.libroIdNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GeneralerrorProvider)).EndInit();
